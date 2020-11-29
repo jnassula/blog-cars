@@ -1,4 +1,4 @@
-# blog-cars
+# stand-cars
 
 Estudando framework web Djando!
 
