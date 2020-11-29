@@ -27,10 +27,10 @@ class Fuel(models.Model):
 
 
 class Car(models.Model):
-    brand = models.ForeignKey('blog.Brand', on_delete=models.CASCADE)
-    model = models.ForeignKey('blog.Model', on_delete=models.CASCADE)
+    brand = models.ForeignKey('stand.Brand', on_delete=models.CASCADE)
+    model = models.ForeignKey('stand.Model', on_delete=models.CASCADE)
     year = models.IntegerField()
-    fuel = models.ForeignKey('blog.Fuel', on_delete=models.CASCADE)
+    fuel = models.ForeignKey('stand.Fuel', on_delete=models.CASCADE)
     observation = models.TextField()
     national = models.BooleanField()
     tires = models.CharField(max_length=10, null=True, blank=True)  

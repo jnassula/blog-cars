@@ -1,5 +1,5 @@
 from django.contrib import admin
-from blog.models import Brand, Model, Fuel, Car
+from stand.models import Brand, Model, Fuel, Car
 
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
